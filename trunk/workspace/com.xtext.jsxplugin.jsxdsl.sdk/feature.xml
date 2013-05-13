@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="com.xtext.jsxplugin.jsxdsl.sdk"
+	label="JSXDsl SDK Feature "
+	version="1.0.0.qualifier">
+	<plugin
+			id="com.xtext.jsxplugin.jsxdsl"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+	<plugin
+			id="com.xtext.jsxplugin.jsxdsl.ui"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+</feature>

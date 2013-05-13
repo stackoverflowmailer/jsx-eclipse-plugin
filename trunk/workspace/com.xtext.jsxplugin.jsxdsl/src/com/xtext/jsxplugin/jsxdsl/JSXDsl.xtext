@@ -1,0 +1,58 @@
+grammar com.xtext.jsxplugin.jsxdsl.JSXDsl with org.eclipse.xtext.common.Terminals
+
+generate jSXDsl "http://www.xtext.com/jsxplugin/jsxdsl/JSXDsl"
+
+Model:
+	doc+=WTPL*;
+	
+WTPL:
+	'<WTPL>' WSCL '</WTPL>';
+		
+WSCL:
+	'<WSCL>' (ADDSYS | SELSYS) '</WSCL>';	
+
+ADDSYS:
+	'<ADDSYS>'name=ID'</ADDSYS>';
+		
+SELSYS:
+	'<SELSYS name=' TempName '>' (ADDTMP | DELTMP) '</SELSYS>';
+	
+ADDTMP:
+	'<ADDTMP name='TempName'>' WTML '</ADDTMP>' ;		
+
+DELTMP: '<DELTMP>'TempName'</DELTMP>';
+
+WTML: '<WTML/>';
+
+TempName:
+  ID ('.' ID)*
+;
+	
+terminal ID : '^'?('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9')*;	
+	
+	
+/* previous 
+ * 
+Model:
+	wtpls+=WTPL*;
+	
+WTPL:
+	'<WTPL>' WTML '</WTPL>';
+	
+WTML:
+	'<WTML>' ADDTMP '</WTML>';
+	
+ADDTMP:
+	'<ADDTMP>' BUTTON '</ADDTMP>';
+	
+BUTTON:
+	'<BUTTON label=' name=ID '>' type=QualifiedName  '</BUTTON>';
+
+QualifiedName:
+  ID ('.' ID)*
+;
+	
+terminal ID : '^'?('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9')*;	
+	
+ *  
+ * */	

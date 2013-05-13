@@ -1,0 +1,23 @@
+##Sample WTP file
+<WTPL>
+	<WSCL>
+	<ADDSYS>SampleWTP</ADDSYS>
+	<SELSYS name=SampleWTP>
+		<DELTMP>sampleTemplate</DELTMP>
+		<ADDTMP name=sampleTemplate disptext="Hello">
+			<WTML>
+				<BUTTON label=Hello visible=N type=C target=helloWorld>btnHello</BUTTON>
+				<SCRIPT>
+					function OnLoad(){
+						GetControl("btnHello").Visible=true;
+					}
+					
+					function helloWorld(){
+						MessageBox("Hello World");
+					}
+				</SCRIPT>
+			</WTML>
+		</ADDTMP>
+	</SELSYS>
+	</WSCL>
+</WTPL>
