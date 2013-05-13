@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- contextQualifierLength=14 -->
+<!-- contextQualifierLength=14 -->
+<feature
+      id="org.eclipse.b3.aggregator.engine.feature"
+      label="%featureName"
+      version="0.2.0.v20130313-0737"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <requires>
+      <import plugin="org.apache.ant"/>
+      <import plugin="org.eclipse.buckminster.osgi.filter"/>
+      <import plugin="org.apache.commons.httpclient"/>
+      <import plugin="org.apache.commons.codec"/>
+      <import plugin="org.apache.commons.logging"/>
+      <import plugin="org.eclipse.core.contenttype"/>
+      <import plugin="org.eclipse.core.filesystem"/>
+      <import plugin="org.eclipse.core.expressions"/>
+      <import plugin="org.eclipse.core.jobs"/>
+      <import plugin="org.eclipse.core.net"/>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.ecf"/>
+      <import plugin="org.eclipse.ecf.filetransfer"/>
+      <import plugin="org.eclipse.ecf.identity"/>
+      <import plugin="org.eclipse.ecf.provider.filetransfer"/>
+      <import plugin="org.eclipse.ecf.provider.filetransfer.httpclient"/>
+      <import plugin="org.eclipse.emf.common"/>
+      <import plugin="org.eclipse.emf.ecore"/>
+      <import plugin="org.eclipse.emf.ecore.xmi"/>
+      <import plugin="org.eclipse.equinox.app"/>
+      <import plugin="org.eclipse.equinox.common"/>
+      <import plugin="org.eclipse.equinox.ds"/>
+      <import plugin="org.eclipse.equinox.event"/>
+      <import plugin="org.eclipse.equinox.frameworkadmin"/>
+      <import plugin="org.eclipse.equinox.frameworkadmin.equinox"/>
+      <import plugin="org.eclipse.equinox.launcher"/>
+      <import plugin="org.eclipse.equinox.p2.artifact.repository"/>
+      <import plugin="org.eclipse.equinox.p2.console"/>
+      <import plugin="org.eclipse.equinox.p2.core"/>
+      <import plugin="org.eclipse.equinox.p2.director"/>
+      <import plugin="org.eclipse.equinox.p2.directorywatcher"/>
+      <import plugin="org.eclipse.equinox.p2.engine"/>
+      <import plugin="org.eclipse.equinox.p2.extensionlocation"/>
+      <import plugin="org.eclipse.equinox.p2.garbagecollector"/>
+      <import plugin="org.eclipse.equinox.p2.jarprocessor"/>
+      <import plugin="org.eclipse.equinox.p2.metadata"/>
+      <import plugin="org.eclipse.equinox.p2.metadata.repository"/>
+      <import plugin="org.eclipse.equinox.p2.publisher"/>
+      <import plugin="org.eclipse.equinox.p2.publisher.eclipse"/>
+      <import plugin="org.eclipse.equinox.p2.repository"/>
+      <import plugin="org.eclipse.equinox.p2.touchpoint.eclipse"/>
+      <import plugin="org.eclipse.equinox.p2.touchpoint.natives"/>
+      <import plugin="org.eclipse.equinox.p2.transport.ecf"/>
+      <import plugin="org.eclipse.equinox.p2.updatesite"/>
+      <import plugin="org.eclipse.equinox.preferences"/>
+      <import plugin="org.eclipse.equinox.registry"/>
+      <import plugin="org.eclipse.equinox.security"/>
+      <import plugin="org.eclipse.equinox.simpleconfigurator"/>
+      <import plugin="org.eclipse.equinox.simpleconfigurator.manipulator"/>
+      <import plugin="org.eclipse.equinox.util"/>
+      <import plugin="org.eclipse.osgi"/>
+      <import plugin="org.eclipse.osgi.services"/>
+      <import plugin="org.eclipse.update.configurator"/>
+      <import plugin="org.kohsuke.args4j"/>
+      <import plugin="org.sat4j.core"/>
+      <import plugin="org.sat4j.pb"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.b3.aggregator"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.v20130313-0737"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.b3.aggregator.engine"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.v20130313-0737"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.b3.aggregator.engine.maven"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.v20111124-1605"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.b3.util"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.v20110816-1008"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.b3.cli"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.v20110816-1008"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.b3.aggregator.legacy"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.v20121219-0725"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.b3.p2"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.v20121219-0725"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.b3.p2.maven"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.v20110818-1257"
+         unpack="false"/>
+
+</feature>

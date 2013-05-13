@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- contextQualifierLength=14 -->
+<!-- contextQualifierLength=14 -->
+<feature
+      id="org.eclipse.b3.aggregator.editor.feature"
+      label="%featureName"
+      version="0.2.0.v20130313-0737"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <includes
+         id="org.eclipse.b3.aggregator.engine.feature"
+         version="0.2.0.v20130313-0737"/>
+
+   <requires>
+      <import plugin="org.eclipse.core.resources"/>
+      <import plugin="org.eclipse.ui.ide"/>
+      <import plugin="org.eclipse.ui.views"/>
+      <import plugin="org.eclipse.ui.workbench"/>
+      <import plugin="org.eclipse.emf.edit"/>
+      <import plugin="org.eclipse.emf.edit.ui"/>
+      <import plugin="org.eclipse.emf.common.ui"/>
+   </requires>
+
+   <plugin
+         id="org.eclipse.b3.aggregator.edit"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.v20130313-0737"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.b3.aggregator.editor"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.v20111122-1524"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.b3.aggregator.legacy.ui"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.v20110816-1008"
+         unpack="false"/>
+
+   <plugin
+         id="org.eclipse.b3.p2.edit"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.v20110816-1008"
+         unpack="false"/>
+
+</feature>
